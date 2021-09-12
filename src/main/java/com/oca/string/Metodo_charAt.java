@@ -9,6 +9,6 @@ package com.oca.string;
  *
  * @author junio
  */
-public class String1 {
+public class Metodo_charAt {
     
 }
