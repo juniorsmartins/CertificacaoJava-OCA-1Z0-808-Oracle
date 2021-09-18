@@ -1,4 +1,4 @@
-package com.oca.string;
+package com.oca.livros.string;
 
 public class Atencao_encadearMetodos 
 {
