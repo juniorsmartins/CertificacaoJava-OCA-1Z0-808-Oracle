@@ -1,7 +1,9 @@
-package com.oca.alura.escopoVariavel;
+package com.oca.alura.escopo;
 
 public class Escopo01 
 {
+    public static int a = 201;
+
     public static void main(String[] args) 
     {
         System.out.println("\nResultado somar: " + somar(2, 3));
