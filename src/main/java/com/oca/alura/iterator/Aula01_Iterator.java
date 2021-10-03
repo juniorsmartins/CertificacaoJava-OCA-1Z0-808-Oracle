@@ -21,8 +21,6 @@ public class Aula01_Iterator
             System.out.println(atual);
         }
 
-
-
         // Vale lembrar que Java sempre trabalha com referências para objetos, e não cria cópias de objetos cada vez que os atribuímos a uma variável ou referência:
         Cliente guilherme = new Cliente();
         guilherme.setNome("guilherme");
@@ -37,5 +35,14 @@ public class Aula01_Iterator
 
         System.out.println(guilherme.getNome()); // Silveira
         System.out.println(clientes.get(0).getNome()); // Silveira
+
+        ArrayList<String> a = new ArrayList<String>();
+        a.add(0,"a");
+        a.add(1,"b");
+        for(Iterator<String> i=a.iterator();i.hasNext();i.next())
+        {
+            String element = i.next();
+            System.out.println(element);
+        }
     }
 }
