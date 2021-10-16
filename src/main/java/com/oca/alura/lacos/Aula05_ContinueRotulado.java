@@ -1,6 +1,6 @@
 package com.oca.alura.lacos;
 
-public class Aula04_BreakRotulado
+public class Aula05_ContinueRotulado
 {
     public static void main(String[] args)
     {
@@ -9,7 +9,7 @@ public class Aula04_BreakRotulado
             System.out.println(i);
             for(int z = 0; z < 10; z++)
             {
-                if(z == 5) break;
+                if(z == 5) continue;
                 System.out.println("\t" + z);
             }
         }
@@ -21,20 +21,8 @@ public class Aula04_BreakRotulado
             System.out.println(i);
             for(int z = 0; z < 10; z++)
             {
-                if(z == 5) break externo;
+                if(z == 5) continue externo;
                 System.out.println("\t" + z);
-            }
-        }
-
-        System.out.println("-------------------------");
-        int q = 0, w = 0;
-        externo: while(q < 10)
-        {
-            System.out.println(q++);
-            while(w < 5)
-            {
-                System.out.println("\t" + w++);
-                if(w == 3) break externo;
             }
         }
     }
