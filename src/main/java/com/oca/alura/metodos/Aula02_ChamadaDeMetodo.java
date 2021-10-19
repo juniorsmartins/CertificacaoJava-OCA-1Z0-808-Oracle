@@ -26,4 +26,37 @@ class Calculador
     {
         return (a + b);
     }
+
+
+    String metodo(int a)
+    {
+        if(a > 0) {
+            return "positivo";
+        } else if(a <= 0) {
+            return "negativo ou zero";
+        }
+        //não compila, o que acontece se não for nem if nem else if?
+        //o compilador não consegue analisar os dois casos
+    }
+
+    // Métodos que não retornam nada não podem ter seu resultado atribuído a uma variável
+    void metodo() {
+        System.out.println("oi");
+    }
+    void metodo2() {
+        // não compila, o método acima não retorna nada
+        int i = metodo();
+    }
+    // Pelo outro lado, mesmo que um método retorne algo, seu retorno pode ser ignorado:
+    int metodo() {
+        System.out.println("oi");
+        return 5;
+    }
+    void metodo2() {
+        int i = metodo(); // i = 5
+        // chamei novamente e não retornei nada, sem problemas
+        metodo();
+    }
+
+
 }
